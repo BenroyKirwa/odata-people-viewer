@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People API App</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>People List</h1>
+        <div class="table-controls">
+            <button id="sortBtn" class="sort-btn">
+                <span class="sort-image" style="display: inline;"><img alt="image" src="Images/sort.svg" height="15" width="15"></span>
+                <span class="sort-label"><b>Sort</b></span>
+                <span id="closeSortBtn" class="close-sort" style="display: none;"><img src="Images/close.svg" alt="image" width="20px" height="20px"></span>
+            </button>
+            <button id="filterBtn" class="filter-btn">
+                <span class="filter-image" style="display: inline;"><img alt="image" src="Images/filter.svg" height="15" width="15"></span>
+                <span class="filter-label"><b>Filter</b></span>
+                <span id="closeFilterBtn" class="close-filter" style="display: none;"><img src="Images/close.svg" alt="image"></span>
+            </button>
+            <button id="refreshBtn" class="refresh-btn"><b>↻ Refresh</b></button>
+        </div>
+        <div class="table-container">
+            <table id="peopleTable">
+                <thead>
+                    <tr>
+                        <th>UserName</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>MiddleName</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody id="peopleTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content"></div>
+    </div>
+
+    <!-- Loader -->
+     <div class="loader"></div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
