@@ -23,20 +23,20 @@ A web application that fetches people data from the OData API (`http://services.
    cd odata-people-viewer
 
 2. Install http-server (if not already installed):
-```
-npm install -g http-server
-```
+   ```bash
+   npm install -g http-server
+
 
 3. Start the server:
-```
-http-server
-```
+   ```bash
+   http-server
+
 
 4. Request temporary access to https://cors-anywhere.herokuapp.com/ to bypass CORS.
 - Go to
-```
-https://cors-anywhere.herokuapp.com/corsdemo
-```
+     ```bash
+     https://cors-anywhere.herokuapp.com/corsdemo
+
 
 5. Open http://localhost:8080 (or the provided IP/port) in your browser.
 ```
